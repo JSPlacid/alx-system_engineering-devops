@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir /tmp/my_first_diirectory create a my_first_directory directory inside the tmp directory
+mkdir /tmp/my_first_diirectory/
