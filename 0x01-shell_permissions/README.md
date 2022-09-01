@@ -1,0 +1,1 @@
+this case study features permissions in shell, which can enable strict to loose permission on personal files or data depending on the user who owns them. chmod command: changes the permission of a file or dir, and can also be used to control access of permission for dir. though two method to achieve this, but the octal notation is used for this project
