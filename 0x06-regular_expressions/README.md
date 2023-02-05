@@ -1,4 +1,4 @@
-Regular expression by FAITH UJU
+Regular expression
 
 A regular expression is a pattern of characters.
 
