@@ -6,6 +6,8 @@
 - [DNS](https://intranet.alxswe.com/concepts/12)
 - [Web stack debugging](https://intranet.alxswe.com/concepts/68)
 
+![https](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/276/FlhGPEK.png)
+
 ## Resources
 **Read or watch:**
 
