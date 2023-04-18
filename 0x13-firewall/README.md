@@ -5,6 +5,8 @@
 
 A firewall is a network security device that monitors incoming and outgoing network traffic and permits or blocks data packets based on a set of security rules. Its purpose is to establish a barrier between your internal network (LAN) and incoming traffic from external sources (such as the internet) in order to block malicious traffic like viruses and hackers.
 
+![firewall](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/284/V1HjQ1Y.png)
+
 ## The UFW On Linux Distro
 
 ![](https://camo.githubusercontent.com/7569e12f8f02496051a5260979c7bd379efb474a07249c65c63a762e3830437b/68747470733a2f2f636f646564657369676e2e66722f77702d636f6e74656e742f75706c6f6164732f323031382f30382f7562756e74752d7566772d312d383830783237362e706e67)
