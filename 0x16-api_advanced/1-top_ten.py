@@ -1,24 +1,22 @@
 #!/usr/bin/python3
-""" A script that has a method that prints
-    the title of the first 10 hot posts
-"""
+"""Contains top_ten function"""
 import requests
-import sys
 
 
 def top_ten(subreddit):
-    """ a method that prints the titles
-        of the first 10 posts
-    """
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {"User-Agent": "chrome 5.8"}
-    limit = {"limit": 10}
-    response = requests.get(url,headers=headers,allow_redirects=False,
-                            params=limit)
-
-    if response.status_code == 200:
-        titles = response.json().get('data').get('children')
-        for title in titles:
-            print(title.get('data').get('title'))
-    else:
-        print(None)
+    """Print the titles of the 10 hottest posts on a given subreddit."""
+    url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
+    headers = {
+        "User-Agent": "0x16-api_advanced:project:\
+v1.0.0 (by /u/firdaus_cartoon_jr)"
+    }
+    params = {
+        "limit": 10
+    }
+    response = requests.get(url, headers=headers, params=params,
+                            allow_redirects=False)
+    if response.status_code == 404:
+        print("None")
+        return
+    results = response.json().get("data")
+    [print(c.get("data").get("title")) for c in results.get("children")]
