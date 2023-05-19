@@ -1,10 +1,10 @@
-# fix the nginx requests limit
-exec { 'upgrade':
- path => '/bin/',
- command => 'sed -i "s/15/4096" /etc/default/nginx',
+# Fix the number of max open files in one process
+
+exec { 'fix--for-nginx':
+  command => "/bin/sed -i /etc/default/nginx -e 's/15/3000/'"
 }
 
-exec { 'restart':
- path => 'usr/bin/',
- command => 'service nginx restart',
+exec { 'restart nginx':
+  command => '/usr/sbin/service nginx restart',
+  require => Exec['fix--for-nginx']
 }
